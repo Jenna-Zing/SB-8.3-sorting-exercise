@@ -1,14 +1,15 @@
 {
   "name": "dsa-sorting",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "jest": "^24.1.0"
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
