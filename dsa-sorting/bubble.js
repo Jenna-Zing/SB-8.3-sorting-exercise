@@ -38,30 +38,38 @@ function bubbleSort(arr) {
 }
 
 function debugBubbleSort(arr) {
-    console.log(`initial arr: ${arr}`);
+    console.log(`Initial list: [${arr.join(', ')}]`);
     for (let i = 0; i < arr.length; i++) {
         let swapped = false;
+        console.log(`\nPass ${i+1}:`);
         // last i elements are already in place
         for (let j = 0; j < arr.length - i - 1; j++) {
             // checking if the item at present iteration
             // is greater than the next iteration
+            process.stdout.write(`Compare ${arr[j]} and ${arr[j+1]} →`);
             if (arr[j] > arr[j + 1]) {
                 // if the condition is true, then swap them
                 let temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
                 swapped = true;
+                console.log(` swap → [${arr.join(', ')}]`);
+            } else {
+                console.log(` no swap`);
             }
-            console.log(`i = ${i}, j = ${j}, arr= ${arr}`);
+            
         }
         // NEW: if no two elements were swapped in the inner loop, array is sorted.
-        if (!swapped) break;
+        if (!swapped) {
+            console.log(`No swaps in this pass.  Array is sorted.`);
+            break;
+        }
     }
     
-    console.log(`sorted arr: ${arr}`);
+    console.log(`\nList is sorted: [${arr.join(', ')}]`);
     return arr;
 }
 
-debugBubbleSort([1, 5, 4, 7, 0]);
+debugBubbleSort([5, 1, 4, 2, 8]);
 
 module.exports = bubbleSort;
