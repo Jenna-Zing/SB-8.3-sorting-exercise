@@ -50,11 +50,11 @@ Let's walk through sorting the list `[5, 1, 4, 2, 8]` using Bubble Sort:
 
 ## Time and Space Complexity
 
-| Case         | Time Complexity |
-| ------------ | --------------- |
-| Best Case    | O(n)            |
-| Average Case | O(n²)           |
-| Worst Case   | O(n²)           |
+| Case        | Time Complexity | Explanation                                                                  |
+| ----------- | --------------- | ---------------------------------------------------------------------------- |
+| **Best**    | **O(n)**        | If the array is already sorted, only one pass is needed (with optimization). |
+| **Average** | **O(n²)**       | Nested loops iterate over all elements in most typical scenarios.            |
+| **Worst**   | **O(n²)**       | When the array is sorted in reverse, it takes the maximum number of swaps.   |
 
 - **Space Complexity**: O(1) — in-place sorting, no extra memory required.
 
