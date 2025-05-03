@@ -99,12 +99,13 @@ The final sorted array is `[-5, -2, 1, 3, 4, 6, 7, 10]`.
 
 ## Time and Space Complexity
 
-| Case                                                                                                           | Time Complexity | Explanation                                                                  |
-| -------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------- |
-| **Best**                                                                                                       | **O(n log n)**  | Merge sort always divides the array and merges, even if it's already sorted. |
-| **Average**                                                                                                    | **O(n log n)**  | The divide and merge steps take consistent time regardless of input.         |
-| **Worst**                                                                                                      | **O(n log n)**  | Maximum comparisons and merging occur when the array is in reverse order.    |
-| - **Space Complexity**: O(n) - Merge Sort requires extra space for temporary arrays used in merging subarrays. |
+| Case        | Time Complexity | Explanation                                                                  |
+| ----------- | --------------- | ---------------------------------------------------------------------------- |
+| **Best**    | **O(n log n)**  | Merge sort always divides the array and merges, even if it's already sorted. |
+| **Average** | **O(n log n)**  | The divide and merge steps take consistent time regardless of input.         |
+| **Worst**   | **O(n log n)**  | Maximum comparisons and merging occur when the array is in reverse order.    |
+
+- **Space Complexity**: O(n) - Merge Sort requires extra space for temporary arrays used in merging subarrays.
 
 > ⚠️ **Note:** Merge Sort is **not an in-place algorithm**, unlike some other sorting algorithms like Bubble and Quick Sort. So if memory
 
@@ -112,7 +113,7 @@ The final sorted array is `[-5, -2, 1, 3, 4, 6, 7, 10]`.
 
 In comparison, simple sorting algorithms like Bubble Sort and Selection Sort have a time complexity of O(n²), because they repeatedly compare elements across the entire array for each element. Merge Sort’s divide-and-conquer approach of splitting the problem in half at each step results in a significantly more efficient algorithm for larger arrays.
 
-## When to Use Merge Sort
+## ✅ When to Use Merge Sort
 
 - **Stable sort required:** Merge Sort preserves the relative order of equal elements.
 - **Sorting linked lists:** It's efficient with linked lists since it doesn't require random access.
@@ -121,7 +122,7 @@ In comparison, simple sorting algorithms like Bubble Sort and Selection Sort hav
 
 ---
 
-## When Not to Use
+## ❌ When Not to Use
 
 - **Memory constraints:** It requires `O(n)` additional space, which makes it unsuitable for memory-critical applications.
 - **In-place requirement:** Merge sort is not in-place, unlike Quick Sort or Heap Sort.

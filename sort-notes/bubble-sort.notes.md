@@ -60,17 +60,17 @@ Let's walk through sorting the list `[5, 1, 4, 2, 8]` using Bubble Sort:
 
 **Best case** occurs when the list is already sorted (with an optimized version that checks for swaps).
 
-## When to Use Bubble Sort
+## ✅ When to Use Bubble Sort
 
 - **Learning and teaching**: Ideal for understanding the fundamentals of sorting algorithms.
 - **Very small datasets**: Works acceptably on small lists where performance isn’t critical.
 - **Data nearly sorted**: Optimized versions with early termination can be efficient in these scenarios.
 
-## When Not to Use
+## ❌ When Not to Use
 
 - For large datasets or performance-critical systems, avoid Bubble Sort. More efficient algorithms like Merge Sort, Quick Sort, or Tim Sort are preferable.
 
-## Real-Life Applications
+## 🌍 Real-Life Applications
 
 Bubble Sort is rarely used in production environments due to inefficiency. However, it might still appear in:
 
@@ -78,7 +78,7 @@ Bubble Sort is rarely used in production environments due to inefficiency. Howev
 - **Embedded systems**: Where code simplicity and low memory usage are more important than speed.
 - **Animation and visualizations**: Simple to animate and demonstrate sorting behavior.
 
-## Summary
+## 🧾 Summary
 
 Bubble Sort is easy to implement and understand but inefficient for large lists. It’s primarily used for educational purposes or simple applications where performance isn't a concern.
 
