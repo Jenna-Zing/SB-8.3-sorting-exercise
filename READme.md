@@ -6,6 +6,6 @@ I have set up a package.json and installed jest. To run the test files, do `npm 
 
 # Jenna's Notes:
 
-- \*\*For running the project, `cd dsa-sorting`, then run `node bubble.js` for example - and be sure that inside of the file you're calling - call the function.
-- Alternatively, you could run the functions in each file from Node.js REPL interactive shell -> `cd dsa-sorting`, then run `node`, and `const bubbleSort = require('./bubble');` for example. Then you may call `bubbleSort(...)` as you wish.
-- \*\*For unit testing, run `npx jest bubble.test.js` for example. Otherwise, run all tests at once using `npm test` in the dsa-sorting directory.
+- \*\*For running the project, `cd dsa-sorting`, then run `node bubble.js` for example - and be sure that inside of the file you're calling - call the function. E.g. I call `debugMergeSort(list)` in merge.js which prints the steps as it completes the sort. For submision, please refer to the versions that are not prefaced with "debug".
+- Alternatively, you could run the functions in each file from Node.js REPL interactive shell -> `cd dsa-sorting`, then run `node`, and `const bubbleSort = require('./bubble');` for example. Then you may call `bubbleSort(...)` (as many times with different inputs) as you wish.
+- \*\*For unit testing, run `cd dsa-sorting` if you haven't already, then run `npx jest bubble.test.js` for example. Otherwise, run all tests at once using `npm test` once in the dsa-sorting directory.
